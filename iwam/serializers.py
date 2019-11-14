@@ -15,7 +15,7 @@ class ScriptSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Script
         fields = ('id', 'title', 'name',
-                  'genre', 'logline', 'comments', 'script_url')
+                  'genre', 'logline', 'comments', 'upload', 'script_url')
 
 
 class CommentSerializer(serializers.HyperlinkedModelSerializer):

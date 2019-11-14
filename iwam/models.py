@@ -5,7 +5,7 @@ class Script(models.Model):
     name = models.CharField(max_length=100)
     genre = models.CharField(max_length=100)
     logline = models.CharField(max_length=140)
-    # thumb = models.ImageField(default="default.png", blank=True)
+    upload = models.FileField(upload_to='uploads/', default="default.pdf", blank=True)
 
     def __str__(self):
         return self.title
